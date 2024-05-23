@@ -82,9 +82,8 @@ display: flex;
 }
 
 .weather-app-icon {
-font-size: 38px;
-margin-top: 17px;
-margin-right: 10px;
+width: 86px;
+height: 86px;
 }
 
 .weather-app-temp {
