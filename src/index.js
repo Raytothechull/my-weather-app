@@ -64,6 +64,13 @@ function updateWeather(response) {
     searchCity(searchInput.value);
   }
 
+  function getForecast(city) {
+    let apiKey = "fa3bt27161bo04aaa147a05bfae3f253";
+    let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=imperial`;
+    console.log(apiUrl);
+  }
+  
+  
   function displayForecast() {
     let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
     let forecastHtml = "";
@@ -93,4 +100,5 @@ function updateWeather(response) {
   searchFormElement.addEventListener("submit", handleSearchSubmit);
   
   searchCity("Las Vegas");
+  getForecast("Las Vegas");
   displayForecast();
