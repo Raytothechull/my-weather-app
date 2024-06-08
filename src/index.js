@@ -100,7 +100,7 @@ function updateWeather(response) {
           </div>
           <div class="weather-forecast-temperatures">
             <div class="weather-forecast-temperature">
-              <strong>${Math.round(day.temperature.maximum)}º</strong>
+              <strong>${Math.round(day.temperature.maximum)}º </strong>
             </div>
             <div class="weather-forecast-min-temperature">
             ${Math.round(day.temperature.minimum)}º
